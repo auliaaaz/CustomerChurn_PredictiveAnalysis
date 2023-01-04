@@ -86,12 +86,16 @@ Adapun berdasarkan pelatihan yang dilakukan, model akhir yang dipilih adalah mod
 ## Evaluation
 Metrik evaluasi yang digunakan bergantung pada nilai *confusion matrix* yang berisi yaitu: *True Positive (TP)* atau data positif yang diprediksi benar, *True Negative (TN)* atau data negatif yang diprediksi benar,*False Positive (FP)* atau data negatif namun diprediksi sebagai data positif, *False Negative (FN)* atau data positif namun diprediksi sebagai data negatif. Metrik evaluasi yang digunakan yaitu:
 - Accuracy: keakuratan model dapat mengklasifikasikan dengan benar. Dihitung dengan: 
+
 $$ Accuracy = {TP+TN \over {TP+TN+FP+FN}} $$
 - Precision: tingkat keakuratan antara data yang diminta dengan hasil prediksi yang diberikan oleh model. Dihitung dengan: 
+
 $$ Precision = {(TP) \over (TP + FP)} $$
 - Recall:  keberhasilan model dalam menemukan kembali sebuah informasi. Dihitung dengan: 
+
 $$ Recall = {(TP) \over (TP + FN)} $$
 - F1 Score: perbandingan rata-rata presisi dan recall yang dibobotkan. Dihitung dengan: 
+
 $$ F1 = {2*(Recall*Precision) \over (Recall+Precision)} $$
 
 Nilai dari metric-metric kedua model tersebut yaitu sebagai berikut. Dimana model1 adalah *random forest* dan model2 adalah KNN. 
